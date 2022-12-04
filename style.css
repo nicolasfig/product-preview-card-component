@@ -57,3 +57,62 @@ td,
 th {
   padding: 0;
 }
+/* Variables */
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/*Main styles*/
+body {
+  background-color: var(--cream);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card {
+  width: 600px;
+  height: 450px;
+  display: flex;
+}
+
+.card > img {
+  height: 450px;
+}
+
+.card .info {
+  margin: 2rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+button {
+  width: 100%;
+  background-color: var(--dark-cyan);
+}
+
+/* attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 16px;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
